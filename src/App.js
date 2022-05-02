@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 //import './App.css';
 import LoginForm from './Components/LoginForm';
+import MainPage from './Pages/MainPage';
 
 function App() {
 
   const adminUser = {
-    email:"admin@admin.com",
-    password:"admin123"
+    email:"nord.ferro@gmail.com",
+    password:"Margo123"
   }
 
   const [user, setUser] = useState({name:"", email:""});
@@ -23,7 +24,7 @@ function App() {
     })   
     }
       else
-     console.log("Details do not match!");
+     console.log("Invalid password or email!");
      setError("Invalid password or email");
     }
 
